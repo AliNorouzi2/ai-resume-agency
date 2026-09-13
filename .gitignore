@@ -1,0 +1,19 @@
+# ignore the venv directory
+venv/
+# ignore the .vscode directory
+.vscode/
+# ignore the .idea directory
+.idea/
+# ignore the .env file
+.env
+
+# ignore the .pytest_cache directory
+.pytest_cache/
+# ignore the __pycache__ directory
+__pycache__/
+
+# ignore the .pytest_cache directory
+.pytest_cache/
+# ignore logs
+logs/
+
