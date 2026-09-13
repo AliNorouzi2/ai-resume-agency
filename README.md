@@ -15,6 +15,7 @@
 ---
 
 ## Overview
+<img width="1536" height="843" alt="image" src="https://github.com/user-attachments/assets/52043dce-444b-4070-ba39-8ef11ae5912a" />
 
 Given a candidate's resume (PDF or raw text), this system automatically:
 
