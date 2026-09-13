@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 AI Recruitment Multi-Agent System
+# AI Recruitment Multi-Agent System
 
 ### Automated resume screening & job-matching powered by local LLMs
 
@@ -14,7 +14,7 @@
 
 ---
 
-## ✨ Overview
+## Overview
 
 Given a candidate's resume (PDF or raw text), this system automatically:
 
@@ -28,7 +28,7 @@ All powered by a coordinated team of AI agents, running entirely on a **local LL
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
                         ┌────────────────────┐
@@ -42,7 +42,7 @@ All powered by a coordinated team of AI agents, running entirely on a **local LL
 
 All agents inherit from a shared `BaseAgent` class, which handles communication with the local LLM (Ollama) and safe JSON parsing of model responses.
 
-### 🧩 Agents
+### Agents
 
 | Agent | Emoji | Responsibility |
 |---|:---:|---|
@@ -100,7 +100,7 @@ All agents inherit from a shared `BaseAgent` class, which handles communication 
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 pip install -r requirements.txt
@@ -139,16 +139,10 @@ The orchestrator runs the full pipeline and returns a `workflow_context` diction
 
 ---
 
-## 📝 Notes
+## Notes
 
 - The `MatcherAgent` requires a `db/database.py` module exposing a `JobDatabase` class with a `db_path` attribute pointing to a SQLite database containing a `jobs` table (`title`, `company`, `location`, `type`, `experience_level`, `salary_range`, `description`, `requirements`, `benefits`).
 - Inter-agent messages currently pass data as Python-literal strings (`str(dict)` / `eval(...)`), which is convenient for local prototyping but should be replaced with proper JSON serialization before any production or externally-facing deployment.
 - `profile_enhancer_agent.py` depends on the `swarm` framework and represents an earlier/alternate design not wired into the current `OrchestratorAgent` pipeline.
 
 ---
-
-<div align="center">
-
-Made with 🤖 + ❤️
-
-</div>
