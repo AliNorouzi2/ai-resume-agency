@@ -1,0 +1,12 @@
+2026-09-13 13:12:05,945 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 13:12:17,274 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 13:12:38,595 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 13:12:56,938 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-13 13:12:56,963 - AI_Recruiter - ERROR - Processing error: 'charmap' codec can't encode characters in position 63-65: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Desktop\Coding\git\swarm-writer-agents\ai-recruiter-agency\app.py", line 202, in main
+    f.write(str(result))
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 63-65: character maps to <undefined>
